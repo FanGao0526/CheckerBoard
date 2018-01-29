@@ -7,8 +7,6 @@ package checkerboard;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.Timer;
-import java.util.TimerTask;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -61,9 +59,10 @@ public class FXMLDocumentController implements Initializable {
 //        Checkerboardcb_current=new Checkerboard(8,8,600,371);
 //        private AnchorPane a=cb_current.build();
         vb.getChildren().add(a);
-        stage.widthProperty().addListener(listener);
-        stage.heightProperty().addListener(listener);
-
+//        stage.widthProperty().addListener(listener);
+//        stage.heightProperty().addListener(listener);
+          vb.widthProperty().addListener(listener);
+          vb.heightProperty().addListener(listener);
     }
     
     @FXML
